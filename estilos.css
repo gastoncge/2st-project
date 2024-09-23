@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+.navbar {
+  z-index: 1;
+}
+
+.navbar-brand {
+  margin-left: 35px;
+}
+
+.nav-link {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.nav-link:hover {
+  transition: all 0.9s;
+  color: rgb(129, 129, 129);
+}
+
+.nav-link a {
+  transition: all 0.7s;
+  text-decoration: none;
+}
+
+.linea {
+  height: 25px;
+  width: auto;
+  background: #00b09b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 1/*  */
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(26, 29, 25, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+}
+/* BOTON DE WHATSAPP */
+.wsp {
+  transition: all 0.7s;
+  height: 50px;
+  width: 50px;
+  background-color: #238b0c;
+  color: white;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px 0px black;
+  z-index: 1;
+}
+
+.wsp:hover {
+  transition: all 0.2s;
+  transform: scale(1.1);
+}
+
+/* INICIO */
+.inicio {
+  background: url(img/35361458_l.jpg) rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25px;
+  height: 1000px;
+  width: 100%;
+}
+
+#m1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 350px;
+  font-family: "Heebo", sans-serif;
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+#m2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Heebo", sans-serif;
+  color: #5ab545;
+  padding-top: 200px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#m3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Heebo", sans-serif;
+  color: #5ab545;
+  font-size: 25px;
+  font-weight: 700;
+}/*# sourceMappingURL=estilos.css.map */
