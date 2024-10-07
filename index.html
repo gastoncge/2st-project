@@ -17,6 +17,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./estilos.css" />
     <link rel="shortcut icon" href="./img/FAVICON.png" type="image/x-icon" />
   </head>
@@ -24,7 +25,9 @@
     <!-- BARRA DE NAVEGACION -->
     <header class="vh-100 overflow-hidden">
       <div class="linea"></div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <nav
+        class="navbar navbar-default navbar-fixed-top top-nav-collapse navbar-expand-lg navbar-dark bg-transparent"
+      >
         <div class="container-fluid">
           <a class="navbar-brand justify-content-start fs-4" href="#">
             <img src="./img/TEXTO.png" alt="Logo" width="100%" height="90px" />
@@ -60,7 +63,7 @@
               class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0"
             >
               <ul
-                class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3"
+                class="navbar-nav justify-content-start align-items-center fs-5 flex-grow-1 pe-3"
               >
                 <li class="nav-item mx-2">
                   <a
@@ -71,10 +74,10 @@
                   >
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+                  <a class="nav-link text-white" href="#servicios">Servicios</a>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link text-white" href="#servicios">Servicios</a>
+                  <a class="nav-link text-white" href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item mx-2">
                   <a class="nav-link text-white" href="#contacto">Contacto</a>
@@ -93,50 +96,35 @@
 
     <!-- INICIO -->
     <main class="inicio">
-      <h2 id="m1">VIAJA AL MUNDO</h2>
-      <h2 id="m10">NEVERLAND</h2>
-      <p id="m2">Más de 10 años haciendo eventos encantadores.</p>
-      <p id="m3">+1000 clientes satisfechos.</p>
+      <h2
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+        id="m1"
+      >
+        VIAJA AL MUNDO
+      </h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+        id="m10"
+      >
+        NEVERLAND
+      </h2>
+      <div data-aos="flip-up" data-aos-duration="1500" class="cartel">
+        <a href="https://wa.me/5492216109227" target="_blank">CONTRATA YA</a>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="500" class="cartel2">
+        <p>Más de 10 años haciendo eventos encantadores.</p>
+        <p>+1000 clientes satisfechos</p>
+      </div>
     </main>
 
-    <!-- SOBRE NOSOTROS -->
-    <section id="nosotros">
-      <img
-        id="campanita"
-        src="./img/campanita.png"
-        alt="Imagen de campanita"
-        height="500px"
-        width="auto"
-      />
-      <h3 id="n1">Sobre Nosotros</h3>
-      <div class="n2">
-        <p id="textn1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odit
-          est asperiores <br />
-          quod maxime pariatur, explicabo corporis alias exercitationem deleniti
-          non? <br />
-          Sed ut doloribus veritatis expedita enim, aliquid voluptates
-          doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Illum, odit est asperiores <br />
-          quod maxime pariatur, explicabo corporis alias exercitationem deleniti
-          non? <br />
-          Sed ut doloribus veritatis expedita enim, aliquid voluptates
-          doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Illum, odit est asperiores <br />
-          quod maxime pariatur, explicabo corporis alias exercitationem deleniti
-          non? <br />
-          Sed ut doloribus veritatis expedita enim, aliquid voluptates
-          doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Illum, odit est asperiores <br />
-          quod maxime pariatur, explicabo corporis alias exercitationem deleniti
-          non? <br />
-        </p>
-      </div>
-    </section>
-
     <!-- SERVICIOS -->
-    <section id="servicios">
+    <section data-aos="fade-up" data-aos-duration="2000" id="servicios">
       <h2 id="s1">Nuestros Servicios</h2>
+      <p class="s2">SOLUCIONES PARA TU EVENTO.</p>
 
       <div class="container">
         <div class="row g-4">
@@ -145,6 +133,8 @@
               <img
                 src="./servicios/MIXTO 2.jpeg"
                 alt="Imagen de animacion infantil"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -154,7 +144,7 @@
                   Ofrecemos animaciones acuáticas, deportivas y mixtas para
                   todas las edades.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt1">+Info</a>
               </div>
             </div>
           </div>
@@ -163,6 +153,8 @@
               <img
                 src="./servicios/KERMESSE 2.jpeg"
                 alt="Imagen de kermesse"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -172,7 +164,7 @@
                   Nuestra kermesse incluye 12 juegos emocionantes, decoración
                   colorida y música que hará bailar a todos.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt1">+Info</a>
               </div>
             </div>
           </div>
@@ -181,6 +173,8 @@
               <img
                 src="./servicios/SPA 1.jpeg"
                 alt="Imagen de animacion infantil"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -190,7 +184,7 @@
                   Convierte el cumpleaños de tu hija en un momento mágico con
                   nuestro spa exclusivo para niñas.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt1">+Info</a>
               </div>
             </div>
           </div>
@@ -199,6 +193,8 @@
               <img
                 src="./servicios/PIJAMADA 1.jpeg"
                 alt="Imagen de carpas"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -208,7 +204,7 @@
                   Nuestras carpas te esperan para vivir una noche mágica. Cada
                   una está equipada con todo lo que necesitas para descansar.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt2">+Info</a>
               </div>
             </div>
           </div>
@@ -217,6 +213,8 @@
               <img
                 src="./servicios/BARRA 1.jpeg"
                 alt="Imagen de carpas"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -229,7 +227,7 @@
                   animadores profesionales te harán vivir una experiencia
                   inolvidable.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt3">+Info</a>
               </div>
             </div>
           </div>
@@ -238,6 +236,8 @@
               <img
                 src="./servicios/ROBOT LED 2.jpeg"
                 alt="Imagen de carpas"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -248,7 +248,7 @@
                   Nuestro robot LED te sorprenderá con efectos especiales y una
                   puesta en escena única.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt4">+Info</a>
               </div>
             </div>
           </div>
@@ -257,6 +257,8 @@
               <img
                 src="./servicios/PLATAFORMA360 2.jpeg"
                 alt="Imagen de carpas"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -266,7 +268,7 @@
                   Nuestra plataforma 360 te transportará a otro mundo con luces
                   vibrantes y accesorios divertidos.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt5">+Info</a>
               </div>
             </div>
           </div>
@@ -276,6 +278,8 @@
               <img
                 src="./servicios/ZANQUISTA 1.jpeg"
                 alt="Imagen de carpas"
+                height="320px"
+                width="auto"
                 class="card-img-top"
               />
               <div class="card-body">
@@ -283,11 +287,26 @@
                 <p class="card-text">
                   Servicios adicionales que puedes contratar para tu evento.
                 </p>
-                <a href="#" class="btn btn-success">+Info</a>
+                <a href="#" class="btn btn-success bt6">+Info</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section data-aos="fade-up" data-aos-duration="2000" id="nosotros">
+      <div class="left"></div>
+      <div class="right">
+        <h2 class="n1">Sobre Nosotros</h2>
+        <p class="n2">
+          Somos un emprendimiento familiar, con mas de 10 años en el rubro de
+          los eventos. Contamos con una cartera de mas de 1000 clientes que nos
+          han apoyado a lo largo de estos años. Tenemos un gran recorrido
+          haciendo eventos magicos por la ciudad de La Plata y ciudades
+          cercanas.
+        </p>
       </div>
     </section>
 
@@ -375,5 +394,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

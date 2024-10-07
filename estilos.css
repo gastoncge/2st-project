@@ -1,7 +1,7 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -76,14 +76,14 @@
 
 /* INICIO */
 .inicio {
-  background: url(img/35361458_l.jpg) rgba(0, 0, 0, 0.3);
+  background: url(img/magicpattern-starry-night-1727998360111.png);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   top: 25px;
-  height: 1000px;
+  height: 1050px;
   width: 100%;
 }
 
@@ -114,80 +114,54 @@
   font-weight: 700;
 }
 
-#m2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-family: "Inter", sans-serif;
-  color: #5ab545;
-  padding-top: 50px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-#m3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-family: "Inter", sans-serif;
-  color: #5ab545;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-/* SOBRE NOSOTROS */
-#nosotros {
-  position: absolute;
-  top: 1000px;
-  height: 600px;
-  width: 100%;
-  background-color: #141414;
-}
-
-#n1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 550;
-  font-size: 40px;
-  text-align: center;
-  color: white;
-  padding-top: 100px;
-}
-
-.n2 {
-  position: absolute;
-  top: 200px;
-  right: 60px;
-  height: 400px;
-  width: 900px;
-}
-
-#textn1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+.cartel {
+  transition: all 0.5s;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #238b0c;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
   font-size: 20px;
-  text-align: left;
-  color: white;
-  padding-left: 20px;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 820px;
 }
 
-#campanita {
+.cartel a {
+  text-decoration: none;
+  color: white;
+}
+
+.cartel:hover {
+  transition: all 0.5s;
+  background-color: #034c3c;
+}
+
+.cartel2 {
+  z-index: 10;
   position: absolute;
-  top: 80px;
-  left: 130px;
+  height: 100px;
+  width: 1200px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 330px;
+  margin-left: 300px;
+  color: green;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 /* SERVICIOS */
 #servicios {
   position: absolute;
-  background-color: #034c3c;
-  top: 1600px;
-  height: 1800px;
+  background-color: #f2f2f2;
+  top: 1070px;
+  height: 1900px;
   width: 100%;
 }
 
@@ -201,11 +175,108 @@
 
 #s1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 550;
-  color: white;
+  font-weight: 700;
+  color: #141414;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 250px;
   font-size: 40px;
+}
+
+.s2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #474747;
+  text-align: center;
+}
+
+.card-body {
+  height: 320px;
+}
+
+.btn {
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  margin-left: 190px;
+}
+
+.bt1 {
+  margin-top: 110px;
+}
+
+.bt2 {
+  margin-top: 86px;
+}
+
+.bt4 {
+  margin-top: 88px;
+}
+
+.bt5 {
+  margin-top: 112px;
+}
+
+.bt6 {
+  margin-top: 160px;
+}
+
+.card-tittle {
+  font-family: "Inter", sans-serif;
+  color: #141414;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-text {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* SOBRE NOSOTROS */
+.nosotros {
+  background-color: black;
+  padding-top: 5000px;
+  height: 1300px;
+  width: 100%;
+}
+
+.left {
+  background: url(./img/35361458_l.jpg);
+  height: 550px;
+  width: 900px;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1905px;
+}
+
+.right {
+  position: absolute;
+  top: 2000px;
+  left: 900px;
+  color: #034c3c;
+  height: 800px;
+  width: 900px;
+}
+
+.n1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #141414;
+  font-weight: 700;
+  text-align: center;
+}
+
+.n2 {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #474747;
+  font-weight: 600;
+  text-align: start;
 }
 
 /* CONTACTO */
@@ -216,9 +287,8 @@
 
 .formulario {
   position: absolute;
-  top: 3550px;
+  top: 3750px;
   right: 985px;
-  /* background-color: #e0e0e0; */
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   height: 550px;
   width: 700px;
@@ -236,14 +306,13 @@
 }
 
 body {
-  /* background-color: #f7f7f7; */ /* Color de fondo */
-  background: #e0eafc; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #cfdef3, #e0eafc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #e0eafc;
+  background: linear-gradient(to right, #cfdef3, #e0eafc);
 }
 
 form {
-  width: 600px; /* Ancho del formulario */
-  margin: 25px auto; /* Centra el formulario */
+  width: 600px;
+  margin: 25px auto;
 }
 
 label {
@@ -253,14 +322,14 @@ label {
 
 input,
 textarea {
-  width: 100%; /* Ocupa todo el ancho disponible */
-  padding: 15px; /* Espacio interno */
-  border: 1px solid #ccc; /* Borde */
-  border-radius: 5px; /* Borde redondeado */
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 textarea {
-  height: 200px; /* Altura del textarea */
+  height: 200px;
   width: 470px;
 }
 
@@ -271,7 +340,7 @@ button {
   position: absolute;
   margin-top: 60px;
   right: 52px;
-  background-color: #5ab545; /* Color del botón */
+  background-color: #5ab545;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -295,25 +364,28 @@ button:hover {
 
 #campanita2 {
   position: absolute;
-  top: 3450px;
+  top: 3650px;
   right: 150px;
 }
 
 /* FOOTER */
-.footer {
-  z-index: 30;
+/* .footer {
+  position: absolute;
+  top: 4130px;
   height: 400px;
   width: 100%;
-  /* background-color: #033a2e; */
-  background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+  /
+  background: linear-gradient(
+    114.3deg,
+    rgb(19, 126, 57) 0.2%,
+    rgb(8, 65, 91) 68.5%
+  );
 }
-
 #logo2 {
   position: absolute;
-  top: 4720px;
+  top: 100px;
   left: 150px;
 }
-
 .footer a {
   transition: all 0.7s;
   font-family: "Mukta", sans-serif;
@@ -325,37 +397,31 @@ button:hover {
   display: inline-block;
   text-decoration: none;
 }
-
 .footer a:hover {
   transition: all 0.4s;
   color: white;
 }
-
 .footer p {
   font-family: "Mukta", sans-serif;
   font-weight: 600;
   font-style: normal;
   color: white;
 }
-
 #f1 {
   font-size: 25px;
   position: absolute;
-  z-index: 4;
-  padding-top: 140px;
+  z-index: 40;
+  padding-top: 100px;
   padding-left: 1005px;
   text-align: left;
 }
-
 #f2 {
   font-size: 25px;
   position: absolute;
-  top: 4604px;
-  padding-top: 200px;
+  top: 105px;
   padding-left: 1305px;
   text-align: left;
-}
-
+} */
 /* MEDIA QUERIES */
 @media screen and (max-width: 376px) {
   /* BARRA DE NAVEGACION */
