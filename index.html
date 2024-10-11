@@ -62,9 +62,7 @@
             <div
               class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0"
             >
-              <ul
-                class="navbar-nav justify-content-start align-items-center fs-5 flex-grow-1 pe-3"
-              >
+              <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
                 <li class="nav-item mx-2">
                   <a
                     class="nav-link active text-white"
@@ -95,7 +93,7 @@
     </a>
 
     <!-- INICIO -->
-    <main class="inicio">
+    <main id="inicio">
       <h2
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
@@ -115,18 +113,32 @@
       <div data-aos="flip-up" data-aos-duration="1500" class="cartel">
         <a href="https://wa.me/5492216109227" target="_blank">CONTRATA YA</a>
       </div>
-      <div data-aos="fade-up" data-aos-duration="500" class="cartel2">
-        <p>Más de 10 años haciendo eventos encantadores.</p>
-        <p>+1000 clientes satisfechos</p>
+      <a href="#servicios"
+        ><img
+          class="m4"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          src="./img/arrow.png"
+          alt="flecha abajo"
+          height="60px"
+          width="auto"
+      /></a>
+      <div data-aos="fade-up" data-aos-duration="2000" class="cartel2">
+        <p class="m2">Más de 10 años haciendo eventos encantadores.</p>
+        <p class="m3">+1000 clientes satisfechos</p>
       </div>
     </main>
 
     <!-- SERVICIOS -->
-    <section data-aos="fade-up" data-aos-duration="2000" id="servicios">
-      <h2 id="s1">Nuestros Servicios</h2>
-      <p class="s2">SOLUCIONES PARA TU EVENTO.</p>
+    <section id="servicios">
+      <h2 data-aos="fade-up" data-aos-duration="2000" id="s1">
+        Nuestros Servicios
+      </h2>
+      <p data-aos="fade-up" data-aos-duration="2000" class="s2">
+        SOLUCIONES PARA TU EVENTO.
+      </p>
 
-      <div class="container">
+      <div data-aos="fade-up" data-aos-duration="2000" class="container">
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
@@ -296,16 +308,27 @@
     </section>
 
     <!-- SOBRE NOSOTROS -->
-    <section data-aos="fade-up" data-aos-duration="2000" id="nosotros">
-      <div class="left"></div>
+    <section id="nosotros">
+      <div class="left">
+        <img
+          class="n3"
+          src="./img/35361458_l.jpg"
+          alt="Niños festejando"
+          height="600px"
+          width="auto"
+        />
+      </div>
       <div class="right">
-        <h2 class="n1">Sobre Nosotros</h2>
-        <p class="n2">
-          Somos un emprendimiento familiar, con mas de 10 años en el rubro de
-          los eventos. Contamos con una cartera de mas de 1000 clientes que nos
-          han apoyado a lo largo de estos años. Tenemos un gran recorrido
-          haciendo eventos magicos por la ciudad de La Plata y ciudades
-          cercanas.
+        <h2 data-aos="fade-left" data-aos-duration="1500" class="n1">
+          Sobre Nosotros
+        </h2>
+        <p data-aos="fade-right" data-aos-duration="1500" class="n2">
+          Somos un emprendimiento familiar con más de 10 años de experiencia en
+          el sector de eventos. <br />
+          A lo largo de este tiempo, hemos tenido el privilegio de contar con
+          más de 1000 clientes que nos han apoyado en nuestra trayectoria. Nos
+          especializamos en crear experiencias mágicas en La Plata y en las
+          ciudades cercanas.
         </p>
       </div>
     </section>
@@ -313,6 +336,8 @@
     <!-- CONTACTO -->
     <section id="contacto">
       <img
+        data-aos="fade-left"
+        data-aos-duration="1500"
         id="campanita2"
         src="./img/campanita2.png"
         alt="Imagen de campanita"
@@ -321,8 +346,16 @@
       />
 
       <div class="formulario">
-        <h4 id="c1">Contactanos!</h4>
-        <form action="enviar.php" method="post" enctype="text/plain">
+        <h4 data-aos="fade-right" data-aos-duration="1500" id="c1">
+          Contactanos!
+        </h4>
+        <form
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          action="enviar.php"
+          method="post"
+          enctype="text/plain"
+        >
           <label for="nombre"></label>
           <input
             type="text"
@@ -345,7 +378,7 @@
             name="comentario"
             cols="30"
             rows="10"
-            placeholder="Escribe tu comentario aqui."
+            placeholder="Deja tu mensaje aqui."
             required
           ></textarea>
           <button type="submit">Enviar</button>
@@ -365,8 +398,8 @@
       <div id="f1">
         <p>Empresa</p>
         <a href="#">Inicio</a> <br />
-        <a href="#nosotros">Nosotros</a><br />
         <a href="#servicios">Servicios</a><br />
+        <a href="#nosotros">Nosotros</a><br />
         <a href="#contacto">Contacto</a><br />
       </div>
       <div id="f2">
